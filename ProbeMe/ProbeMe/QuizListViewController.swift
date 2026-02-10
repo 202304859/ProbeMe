@@ -11,6 +11,7 @@ class QuizListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    //for titles and images in the tableview !!!!!
     struct Quiz {
             let title: String
             let imageName: String
@@ -31,6 +32,11 @@ class QuizListViewController: UIViewController {
                 tableView.separatorStyle = .none
                 tableView.rowHeight = 140
                 tableView.backgroundColor = .systemBackground
+                /*tableView.sectionHeaderTopPadding = 0
+                tableView.contentInsetAdjustmentBehavior = .never*/
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -61,6 +67,9 @@ extension QuizListViewController: UITableViewDataSource {
         cell.configure(title: quiz.title, image: UIImage(named: quiz.imageName))
         return cell
     }
+    
 }
+
+
 
 extension QuizListViewController: UITableViewDelegate { }
