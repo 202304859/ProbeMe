@@ -125,7 +125,7 @@ enum QuizBank {
                     Answer(text: "No, they left me", result: .spiderman),
                     Answer(text: "No, I left them", result: .batman),
                     Answer(text: "Yes, I'm in a happy relationship", result: .superman),
-                    Answer(text: "No I'm not", result: .wonderwoman)
+                    Answer(text: "No", result: .wonderwoman)
                 ]
             ),
             Question(
