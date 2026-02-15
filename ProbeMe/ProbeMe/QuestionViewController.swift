@@ -52,10 +52,10 @@ final class QuestionViewController: UIViewController {
         workingQuestions = quiz.questions.shuffled().map { q in
             switch q.type {
             case .ranged:
-                // don't shuffle ranged answers (slider needs a real left->right order)
+                
                 return q
             case .single, .multiple:
-                // shuffle these freely
+               
                 return Question(text: q.text, type: q.type, answers: q.answers.shuffled())
             }
         }

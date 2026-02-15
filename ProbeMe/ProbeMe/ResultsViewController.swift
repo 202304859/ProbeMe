@@ -16,7 +16,6 @@ final class ResultsViewController: UIViewController {
 
         styleCloseButton()
 
-        // force the tap handler in code (ignores storyboard actions)
         closeButton.removeTarget(nil, action: nil, for: .allEvents)
         closeButton.addTarget(self, action: #selector(closeNow), for: .touchUpInside)
 
@@ -49,7 +48,7 @@ final class ResultsViewController: UIViewController {
     }
 
     @objc private func closeNow() {
-        // ✅ This dismisses the whole modal stack back to your tab (quiz list)
+    
         presentingViewController?.presentingViewController?.dismiss(animated: true)
     }
 

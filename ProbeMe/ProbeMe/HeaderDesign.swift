@@ -2,8 +2,6 @@
 //  HeaderDesign.swift
 //  ProbeMe
 //
-//  Created by hyacinth on 09/02/2026.
-//
 
 import UIKit
 
